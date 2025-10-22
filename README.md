@@ -95,7 +95,7 @@ O problema do Caminho Hamiltoniano se enquadra na classe **NP-Completo**:
 - **Custo por caminho**: Para cada permutação, verifica n-1 arestas = O(n) operações
 - **Total**: **T(n) = n! × O(n) = O(n × n!) ≈ O(n!)** 
 
-### Aplicação do Teorema Mestre
+## Aplicação do Teorema Mestre
 
 **Não é possível aplicar o Teorema Mestre** ao algoritmo implementado.
 O Teorema Mestre requer que o algoritmo siga o padrão de recorrência: **T(n) = aT(n/b) + f(n)**, porém, Nosso algoritmo de backtracking não divide o problema em subproblemas de tamanho n/b. A relação de recorrência é: **T(n) = n × T(n-1) + O(n)**, que não se encaixa no formato do Teorema Mestre. O algoritmo explora uma árvore de decisão combinatorial em vez de uma árvore de divisão e conquista.
